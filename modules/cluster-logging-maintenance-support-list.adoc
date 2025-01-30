@@ -7,15 +7,12 @@
 
 You must set the Red{nbsp}Hat OpenShift Logging Operator to the `Unmanaged` state to modify the following components:
 
-* The `Elasticsearch` custom resource (CR)
-
-* The Kibana deployment
-
 * The `fluent.conf` file
 
 * The Fluentd daemon set
 
-You must set the OpenShift Elasticsearch Operator to the `Unmanaged` state to modify the Elasticsearch deployment files.
+* The `vector.toml` file for Vector collector deployments
+
 
 Explicitly unsupported cases include:
 

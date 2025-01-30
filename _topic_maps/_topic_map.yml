@@ -2927,6 +2927,8 @@ Topics:
 #      File: logging-5-8-release-notes
 #    - Name: Logging 5.7
 #      File: logging-5-7-release-notes
+  - Name: Support
+    File: cluster-logging-support
   - Name: Logging 6.0
     Dir: logging-6.0
     Topics:
@@ -2961,8 +2963,6 @@ Topics:
       File: log6x-opentelemetry-data-model-6.1
     - Name: Visualization for logging
       File: log6x-visual-6.1
-#  - Name: Support
-#    File: cluster-logging-support
 #  - Name: Troubleshooting logging
 #    Dir: troubleshooting
 #    Topics:

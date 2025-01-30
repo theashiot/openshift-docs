@@ -23,7 +23,7 @@ include::snippets/log6x-loki-statement-snip.adoc[]
 [id="cluster-logging-support-CRDs_{context}"]
 == Supported API custom resource definitions
 
-LokiStack development is ongoing. Not all APIs are currently supported.
+The following table describes the supported LokiStack APIs.
 
 .Loki API support states
 [cols="3",options="header"]
@@ -47,6 +47,14 @@ LokiStack development is ongoing. Not all APIs are currently supported.
 |RecordingRule
 |recordingrule.loki.grafana/v1
 |Supported in 5.7
+
+|LogFileMetricExporter
+|LogFileMetricExporter.logging.openshift.io/v1alpha1
+|Supported in 5.8
+
+|ClusterLogForwarder
+|clusterlogforwarder.observability.openshift.io/v1
+|Supported in 5.8
 |===
 
 include::modules/cluster-logging-maintenance-support-list.adoc[leveloffset=+1]
@@ -65,11 +73,6 @@ When opening a support case, it is helpful to provide debugging information abou
 You can use the xref:../../support/gathering-cluster-data.adoc#gathering-cluster-data[`must-gather` tool] to collect diagnostic information for project-level resources, cluster-level resources, and each of the {logging} components.
 
 For prompt support, supply diagnostic information for both {product-title} and {logging}.
-
-[NOTE]
-====
-Do not use the `hack/logging-dump.sh` script. The script is no longer supported and does not collect data.
-====
 
 include::modules/cluster-logging-must-gather-about.adoc[leveloffset=+2]
 include::modules/cluster-logging-must-gather-collecting.adoc[leveloffset=+2]

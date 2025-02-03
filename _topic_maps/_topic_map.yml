@@ -2968,6 +2968,11 @@ Topics:
       File: log6x-opentelemetry-data-model-6.1
     - Name: Visualization for logging
       File: log6x-visual-6.1
+  - Name: Logging 6.2
+    Dir: logging-6.2
+    Topics:
+    - Name: Release notes
+      File: log6x-release-notes-6.2    
   - Name: Support
     File: cluster-logging-support
   - Name: Troubleshooting logging
